@@ -32,7 +32,6 @@ header>div{
     margin-left: 1.65vw;
 }
 
-
 .branding-nav svg{
     width: 21.3vh;
 }
@@ -56,23 +55,23 @@ nav li{
     letter-spacing: -0.2px;
 }
 
-nav li:nth-child(1):hover{
+nav li:nth-child(1):hover, nav li:nth-child(2):hover{
     color: #FFB755;
 }
 
-nav li:nth-child(2):hover{
+nav li:nth-child(3):hover{
     color: #A3FF55;
 }
 
-nav li:nth-child(3):hover{
+nav li:nth-child(4):hover{
     color: #55FFD1;
 }
 
-nav li:nth-child(4):hover{
+nav li:nth-child(5):hover{
     color: #55D8FF;
 }
 
-nav li:nth-child(5):hover{
+nav li:nth-child(6):hover{
     color: #9655FF;
 }
 
@@ -81,7 +80,7 @@ nav li:nth-child(5):hover{
     height: 100%;
 }
 
-/* ~Header*/
+/* ~Main*/
 /* ^Initial Banner */
 .initial-banner{
     
@@ -94,9 +93,6 @@ nav li:nth-child(5):hover{
     /* ^Display In Elements */
     .branding-nav{
         display: block;
-    }
-    nav{
-        display: none;
     }
 
     /* ^Main Container */
@@ -168,5 +164,29 @@ nav li:nth-child(5):hover{
 
     .branding-nav svg{
         width: 18.8vh;
+    }
+
+    /* ^Navegation Menu Dropdawn */
+    nav{
+        width: 100%;
+        display: none;
+        color: white;
+        margin: 0;top: 12%;
+        position: absolute;
+    }
+
+    nav ul{
+        width: 100%;
+        margin-top: 8.2vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-size: 2.47rem;
+    }
+
+    nav li{
+        width: 100%;
+        margin: 0;
     }
 }
