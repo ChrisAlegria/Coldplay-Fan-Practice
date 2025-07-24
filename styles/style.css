@@ -1,18 +1,22 @@
 /* ~Base Styles. */
+/* &Body General Styles */ 
 body{
     background-color: #003a6f;
     font-family: "louize", "Georgia", "Times", "Times New Roman", serif;    
     color: white;
 }
 
-nav{
-    height: 3vh;
-    background-color: red;
-    margin: 4vh 1vw;
+/* &Navegation Section*/
+/* ^Main Container */
+header{
+    height: 3.2vh;
+    margin: 4vh 0.8vw;
+    padding: 0;
     display: flex;
     justify-content: space-between;
 }
 
+/* ^Navegation Content */
 nav>div{
     display: flex;
 }
@@ -25,6 +29,11 @@ nav>div>div, nav ul{
 
 nav ul{
     list-style: none;
+}
+
+nav li{
+    padding: 0;
+    margin: 5%;
 }
 
 .moons-logo{
