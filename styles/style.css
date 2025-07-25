@@ -11,17 +11,26 @@ body{
 /* ^Main Container */
 header{
     height: 3.2vh;
-    margin: 4vh 1.4vw 4vh 1.65vw;
+    margin: 4vh 0;
     padding: 0;
     display: flex;
     justify-content: space-between;
 }
 
+/*1.4vw  1.65vw*/ 
 header>div{
     display: flex;
 }
 
 /* ^Content */
+.branding-nav{
+    margin-left: 1.65vw;
+}
+
+.header-moons{
+    margin-right: 1.4vw;
+}
+
 nav ul{
     margin: 0;
     list-style: none;
