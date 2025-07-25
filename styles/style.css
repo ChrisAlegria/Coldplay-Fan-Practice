@@ -6,8 +6,7 @@ body{
     color: white;
 }
 
-/* &Navegation Section*/
-/* ^Main Container */
+/* &Header*/
 header{
     height: 3.2vh;
     margin: 4vh 0.8vw;
@@ -16,26 +15,12 @@ header{
     justify-content: space-between;
 }
 
-/* ^Navegation Content */
-nav>div{
+header>div{
     display: flex;
-}
-
-nav>div>div, nav ul{
-    display: flex;
-    padding: 0;
-    margin: 0;
 }
 
 nav ul{
-    list-style: none;
-}
-
-nav li{
-    padding: 0;
-    margin: 5%;
-}
-
-.moons-logo{
     margin: 0;
+    list-style: none;
+    display: flex;
 }
