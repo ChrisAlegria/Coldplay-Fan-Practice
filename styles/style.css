@@ -8,9 +8,10 @@ body{
 }
 
 /* &Header*/
+/* ^Main Container */
 header{
     height: 3.2vh;
-    margin: 4vh 0.8vw;
+    margin: 4vh 1.4vw 4vh 1.65vw;
     padding: 0;
     display: flex;
     justify-content: space-between;
@@ -20,6 +21,7 @@ header>div{
     display: flex;
 }
 
+/* ^Content */
 nav ul{
     margin: 0;
     list-style: none;
