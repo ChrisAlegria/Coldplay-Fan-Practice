@@ -22,6 +22,10 @@ header>div{
 }
 
 /* ^Content */
+.media-branding-nav{
+    display: none;
+}
+
 .branding-nav{
     margin-left: 1.65vw;
 }
@@ -67,4 +71,24 @@ nav li:nth-child(5):hover{
 
 .header-moons{
     margin-right: 1.4vw;
+}
+
+/* ! width 899px Styles. */
+@media (max-width: 899px){
+    nav{
+        display: none;
+    }
+
+    header{
+        display: grid;
+        grid-template-columns: 3;
+    }
+
+    .media-branding-nav{
+        display: block;
+    }
+
+    .media-branding-nav li{
+        list-style: none;
+    }
 }
