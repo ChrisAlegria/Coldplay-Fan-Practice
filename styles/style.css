@@ -17,7 +17,6 @@ header{
     justify-content: space-between;
 }
 
-/*1.4vw  1.65vw*/ 
 header>div{
     display: flex;
 }
@@ -42,6 +41,28 @@ nav ul{
 nav li{
     margin: 0 1.87vw 0 0;
     align-content: center;
+    cursor: pointer;
+    transition: color 0.4s;
+}
+
+nav li:nth-child(1):hover{
+    color: #FFB755;
+}
+
+nav li:nth-child(2):hover{
+    color: #A3FF55;
+}
+
+nav li:nth-child(3):hover{
+    color: #55FFD1;
+}
+
+nav li:nth-child(4):hover{
+    color: #55D8FF;
+}
+
+nav li:nth-child(5):hover{
+    color: #9655FF;
 }
 
 .header-moons{
