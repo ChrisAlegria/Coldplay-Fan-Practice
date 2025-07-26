@@ -72,6 +72,7 @@ nav li:nth-child(5):hover{
 
 .header-moons{
     margin-right: 1.4vw;
+    height: 100%;
 }
 
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -87,11 +88,12 @@ nav li:nth-child(5):hover{
 
     header{
         height: auto;
+        margin-top: 2vh;
         display: grid;
-        grid-template-columns: repeat(3, 33.3%);
+        grid-template-columns: repeat(3, 32.6vw);
         grid-row: auto auto;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         justify-items: center;
     }
 
@@ -105,5 +107,9 @@ nav li:nth-child(5):hover{
 
     .header-moons{
         grid-column: 2;
+    }
+
+    .header-moons img{
+        width: 10vw;
     }
 }
