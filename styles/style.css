@@ -1,3 +1,4 @@
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 /* !Base Styles. */
 /* ~Body General Styles */ 
 body{
@@ -73,22 +74,36 @@ nav li:nth-child(5):hover{
     margin-right: 1.4vw;
 }
 
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 /* ! width 899px Styles. */
 @media (max-width: 899px){
+    .branding-nav{
+        display: block;
+    }
+
     nav{
         display: none;
     }
 
     header{
+        height: auto;
         display: grid;
-        grid-template-columns: 3;
+        grid-template-columns: repeat(3, 33.3%);
+        grid-row: auto auto;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
     }
 
     .media-branding-nav{
         display: block;
-    }
+    }   
 
     .media-branding-nav li{
         list-style: none;
+    }
+
+    .header-moons{
+        grid-column: 2;
     }
 }
