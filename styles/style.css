@@ -97,6 +97,11 @@ nav li:nth-child(5):hover{
         justify-items: center;
     }
 
+    header div{
+        margin: 0;
+        padding: 0;
+    }
+
     .media-branding-nav{
         display: block;
     }   
@@ -107,9 +112,15 @@ nav li:nth-child(5):hover{
 
     .header-moons{
         grid-column: 2;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
     }
 
     .header-moons img{
-        width: 10vw;
+        width: 15vw;
+        height: 2.8vh;
+        margin-top: 0.8vh;
     }
 }
