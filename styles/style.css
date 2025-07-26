@@ -16,6 +16,7 @@ header{
     padding: 0;
     display: flex;
     justify-content: space-between;
+    color: #f8f8f8;
 }
 
 header>div{
@@ -31,6 +32,10 @@ header>div{
     margin-left: 1.65vw;
 }
 
+
+.branding-nav svg{
+    width: 21.3vh;
+}
 nav{
     font-size: 0.96rem;
     margin-left: 2.2vw;
@@ -88,22 +93,41 @@ nav li:nth-child(5):hover{
 
     header{
         height: auto;
-        margin-top: 2vh;
+        margin-top: 2.1vh;
+        padding: 0;
         display: grid;
         grid-template-columns: repeat(3, 32.6vw);
         grid-row: auto auto;
         justify-content: center;
         align-items: flex-start;
         justify-items: center;
+        font-size: 0.91rem;
+        font-weight: 400;
     }
 
+    header a{
+        color: #f8f8f8;
+        text-decoration: none;
+    }
+    
     header div{
         margin: 0;
         padding: 0;
     }
 
+    header .media-branding-nav:first-child{
+        justify-self: flex-start;
+        margin-left: 2vw;
+    }
+
+    header div:nth-child(3){
+        justify-self: flex-end;
+        margin-right: 2vw;
+    }
+
     .media-branding-nav{
         display: block;
+        cursor: pointer;
     }   
 
     .media-branding-nav li{
@@ -121,6 +145,18 @@ nav li:nth-child(5):hover{
     .header-moons img{
         width: 115px;
         height: 17px;
-        margin-top: 0.6vw;
+        margin-top: 1vw;
+    }
+
+    .branding-nav{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .branding-nav svg{
+        width: 18.8vh;
     }
 }
