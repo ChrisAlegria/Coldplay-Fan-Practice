@@ -27,6 +27,5 @@ function navegationMenuDropdown(){
         document.getElementsByTagName('main')[0].style = 'display: block';
         document.getElementsByTagName('footer')[0].style = 'display: block';
         return
-
     }
 }    
