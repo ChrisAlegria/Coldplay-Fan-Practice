@@ -136,6 +136,10 @@ nav li:nth-child(6):hover{
         cursor: pointer;
     }   
 
+    .media-branding-nav:first-child{
+        width: 100%;
+    }
+
     .media-branding-nav li{
         list-style: none;
     }
@@ -188,6 +192,13 @@ nav li:nth-child(6):hover{
     nav li{
         width: 100%;
         margin: 0;
+    }
+
+    nav img{
+        height: 59.3%;
+        position: absolute;
+        top: 28.5vh;
+        left: 8vw;
     }
 }
 
