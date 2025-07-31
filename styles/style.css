@@ -93,6 +93,8 @@ nav li:nth-child(6):hover{
 .rainbow-background{
     position: absolute;
     top: 0;
+    padding: 0;
+    margin: 0;
 }
 
 .rainbow-background img{
@@ -103,10 +105,16 @@ nav li:nth-child(6):hover{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0;
+}
+
+.initial-banner div:nth-child(1){
+    display: flex;
+    justify-content: center;
 }
 
 .initial-banner div:nth-child(1) img{
-    width: 43.8vw;
+    width: 96.6%;
     margin-top: 6.8vh;
 }
 
