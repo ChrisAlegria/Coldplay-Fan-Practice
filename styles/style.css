@@ -26,6 +26,7 @@ header>div{
 
 .media-branding-nav{
     display: none;
+    z-index: 1;
 }
 
 .branding-nav{
@@ -52,6 +53,7 @@ nav ul{
 }
 
 nav li{
+    z-index: 1;
     margin: 0.1vw 1.75vw 0 0;
     align-content: center;
     cursor: pointer;
