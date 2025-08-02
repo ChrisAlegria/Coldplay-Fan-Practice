@@ -105,10 +105,12 @@ nav li:nth-child(6):hover{
 }
 
 .initial-banner{
+    height: 45vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0;
+    position: relative;
 }
 
 .initial-banner div:nth-child(1){
@@ -126,6 +128,10 @@ nav li:nth-child(6):hover{
     letter-spacing: -0.019rem;
     margin-top: 3vh;
     padding: 0;
+}
+
+.love-banner-message{
+    position: absolute;
 }
 
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
