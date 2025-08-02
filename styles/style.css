@@ -83,7 +83,7 @@ nav li:nth-child(6):hover{
 }
 
 .header-moons{
-    margin-right: 1.4vw;
+    margin-right: 1.41vw;
     height: 100%;
 }
 
@@ -132,6 +132,17 @@ nav li:nth-child(6):hover{
 
 .love-banner-message{
     position: absolute;
+    bottom: 17.1%;
+    right: 1.84%;
+}
+
+.love-banner-message svg{
+    width: 315.5px;
+}
+
+.initial-banner div:nth-child(3) img{
+    height: 1.85vw;
+    margin-top: 14%;
 }
 
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
