@@ -55,11 +55,12 @@ nav ul{
 
 nav li{
     z-index: 1;
-    margin: 0.1vw 1.9vw 0 0;
+    margin: 0.1vw 1.95vw 0 0;
     align-content: center;
     cursor: pointer;
     transition: color 0.4s;
     letter-spacing: -0.5px;
+    font-size: 1.15vw;
 }
 
 nav li:nth-child(1):hover, nav li:nth-child(2):hover{
