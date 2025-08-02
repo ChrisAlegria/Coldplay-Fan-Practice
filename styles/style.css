@@ -121,8 +121,9 @@ nav li:nth-child(6):hover{
 }
 
 .initial-banner div:nth-child(2){
-    font-size: 1.21rem;
-    margin-top: 2.2vh;
+    font-size: 1.22rem;
+    letter-spacing: -0.019rem;
+    margin-top: 3vh;
     padding: 0;
 }
 
