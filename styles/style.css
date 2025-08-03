@@ -59,7 +59,7 @@ nav li{
     align-content: center;
     cursor: pointer;
     transition: color 0.4s;
-    letter-spacing: -0.5px;
+    letter-spacing: -0.56px;
     font-size: 1.15vw;
 }
 
@@ -120,7 +120,7 @@ nav li:nth-child(6):hover{
 }
 
 .initial-banner div:nth-child(1) img{
-    width: 44vw;
+    width: 43.8vw;
     margin-top: 6.8vh;
 }
 
