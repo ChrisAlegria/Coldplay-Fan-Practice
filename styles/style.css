@@ -267,13 +267,16 @@ nav li:nth-child(6):hover{
     /* ~Main*/
     /* ^Initial Banner */
     .rainbow-background{
-        position: absolute;
-        top: 0;
-        right: 28vw;
+        right: 29.5vw;
     }
 
     .rainbow-background img{
-        width: 100vw;
+        width: 98vw;
+    }
+
+    .initial-banner div:nth-child(1) img{
+        width: 580px;
+        margin-top: 4.5vh;
     }
 
 }
