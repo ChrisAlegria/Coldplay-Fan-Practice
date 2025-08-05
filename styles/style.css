@@ -300,8 +300,12 @@ footer{
     }
 
     .initial-banner div:nth-child(3) img{
-        height: 29%;
-        margin-top: 14%;
+        height: 28.7%;
+        margin-top: 14.2%;
+    }
+
+    .love-banner-message{
+        display: none;
     }
 }
 
