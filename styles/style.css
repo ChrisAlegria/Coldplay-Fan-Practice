@@ -55,11 +55,12 @@ nav ul{
 
 nav li{
     z-index: 1;
-    margin: 0.1vw 1.92vw 0 0;
+    margin: 0 1.92vw 0 0;
     align-content: center;
     cursor: pointer;
     transition: color 0.4s;
     letter-spacing: -0.56px;
+    font-size: 1rem;
 }
 
 nav li:nth-child(1):hover, nav li:nth-child(2):hover{
@@ -133,20 +134,20 @@ main{
 }
 
 .initial-banner div:nth-child(2){
-    font-size: 1.49vw;
+    font-size: 1.54vw;
     letter-spacing: -0.019rem;
-    margin-top: 3vh;
+    margin-top: 2.5vh;
     padding: 0;
 }
 
 .initial-banner div:nth-child(3) img{
     height: 1.85vw;
-    margin-top: 14%;
+    margin-top: 13%;
 }
 
 .love-banner-message{
     position: absolute;
-    bottom: 17.1%;
+    bottom: 16.8%;
     right: 1.84%;
 }
 
