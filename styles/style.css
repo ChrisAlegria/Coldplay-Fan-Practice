@@ -274,13 +274,23 @@ footer{
         z-index: 0;
     }
 
-    nav img{
+    #hearts-logo{
         z-index: 1;
         display: block;
         height: 31.1vh;
         position: absolute;
         top: 28.1vh;
         left: 8vw;
+    }
+
+    #dropdawn-rainbow{
+        display: block;
+        width: 100px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        rotate: 270deg;
+        transform: scaleX(-1);
     }
 
     /* ~Main */
