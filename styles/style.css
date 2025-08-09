@@ -59,8 +59,8 @@ nav li{
     align-content: center;
     cursor: pointer;
     transition: color 0.4s;
-    letter-spacing: -0.56px;
-    font-size: 1rem;
+    letter-spacing: -0.1px;
+    font-size: 0.96rem;
 }
 
 nav li:nth-child(1):hover, nav li:nth-child(2):hover{
@@ -290,7 +290,7 @@ footer{
         top: 0;
         right: 0;
         rotate: 270deg;
-        transform: scaleX(-1);
+        transform: scaleX(-1);  
     }
 
     /* ~Main */
