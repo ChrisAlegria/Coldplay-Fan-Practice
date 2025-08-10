@@ -271,11 +271,11 @@ footer{
         margin: 0;
         font-size: 2.48rem;
         letter-spacing: 0.1px;
-        z-index: 0;
+        z-index: 1;
     }
 
     #hearts-logo{
-        z-index: 1;
+        z-index: 2;
         display: block;
         height: 31.1vh;
         position: absolute;
@@ -284,13 +284,12 @@ footer{
     }
 
     #dropdawn-rainbow{
+        z-index: 0;
         display: block;
-        width: 100px;
-        position: absolute;
-        top: 0;
-        right: 0;
-        rotate: 270deg;
-        transform: scaleX(-1);  
+        width: 175vw;
+        position: fixed;
+        top: -135.8vw; /*top*/
+        left: 0;
     }
 
     /* ~Main */
