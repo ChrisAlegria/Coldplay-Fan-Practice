@@ -227,7 +227,7 @@ footer{
     .header-moons img{
         width: 14.4vw;
         height: 2.2vw;
-        margin-top: 0.9vw;
+        margin-top: 1vw;
     }
 
     .branding-nav{
@@ -246,10 +246,10 @@ footer{
     nav{
         background-color: #003a6f;
         width: 100%;
-        height: 87.7vh;
+        height: 87vh;
         color: white;
         margin: 0;
-        top: 12.3%;
+        top: 13%;
         position: absolute;
         opacity: 0;
         visibility: hidden;
@@ -258,7 +258,7 @@ footer{
 
     nav ul{
         width: 100%;
-        margin-top: 7.48vh;
+        margin-top: 7.45vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -279,7 +279,7 @@ footer{
         display: block;
         height: 31.1vh;
         position: absolute;
-        top: 28.1vh;
+        top: 27.5vh;
         left: 8vw;
     }
 
