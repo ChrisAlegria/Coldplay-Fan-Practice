@@ -288,7 +288,7 @@ footer{
         display: block;
         width: 175vw;
         position: fixed;
-        top: -135.8vw; /*top*/
+        top: -100%;
         left: 0;
     }
 
