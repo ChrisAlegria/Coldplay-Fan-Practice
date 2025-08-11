@@ -37,6 +37,10 @@ header>div{
     width: 21.3vh;
 }
 
+.branding-nav div:first-child{
+    z-index: 1;
+}
+
 nav{
     font-size: 1.15vw;
     margin-left: 2.2vw;
@@ -180,7 +184,7 @@ footer{
         font-size: 0.91rem;
         font-weight: 400;
     }
-
+    
     /* ^Content */
     header a{
         color: #f8f8f8;
@@ -225,8 +229,9 @@ footer{
     }
 
     .header-moons img{
-        width: 14.4vw;
-        height: 2.2vw;
+        width: 115px;
+        height: 17px;
+        z-index: 1;
         margin-top: 1vw;
     }
 
@@ -237,11 +242,11 @@ footer{
         display: flex;
         justify-content: center;
     }
-
+    
     .branding-nav svg{
         width: 18.8vh;
     }
-
+    
     /* ^Navegation Menu Dropdawn */
     nav{
         background-color: #003a6f;
