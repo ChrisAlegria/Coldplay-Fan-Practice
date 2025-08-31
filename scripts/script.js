@@ -6,7 +6,7 @@ let screenWidth = window.innerWidth;
 // ~Width Principal Functions
 if(screenWidth > 800){
     document.getElementById('navegation-hidden-option').style = 'display:none';
-    document.getElementById('')
+    document.getElementById('');
 
 } else {
     document.getElementById('navegation-hidden-option').style = 'display:block';
@@ -24,7 +24,7 @@ function navegationMenuDropdown(){
         document.getElementsByClassName('media-branding-nav')[0].style = 'margin-left: 1.5vw';
         document.getElementsByClassName('media-branding-nav')[1].style = 'margin-right: 1.5vw';   
         document.getElementById('navegation-menu-element').textContent = 'CLOSE';
-        return
+        return;
 
     } else if(navegationDropdownActivation == 'CLOSE'){
         document.getElementById('navegation-menu-element').textContent = 'MENU';
@@ -33,6 +33,6 @@ function navegationMenuDropdown(){
         document.getElementsByTagName('footer')[0].style = 'visibility: visible; opacity: 1; display: block';
         document.getElementsByClassName('media-branding-nav')[0].style = 'margin-left: 1.65vw';
         document.getElementsByClassName('media-branding-nav')[1].style = 'margin-right: 1.65vw';   
-        return
+        return;
     }
 }    
