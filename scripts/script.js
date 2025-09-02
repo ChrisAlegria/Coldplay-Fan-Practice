@@ -1,18 +1,33 @@
-
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// ! width 899px Script.
-let screenWidth = window.innerWidth;
+// !General width Script.
+// ~Width Dinamic Resize Functions
+// &Funcion para el ajuste automatico de elementos de manera responsiva segun el tamaño de pantalla.
+function resizeAutoLecture(){
+    let screenWidth = window.innerWidth;
 
-// ~Width Principal Functions
-if(screenWidth > 800){
-    document.getElementById('navegation-hidden-option').style = 'display:none';
-    document.getElementById('');
-
-} else {
-    document.getElementById('navegation-hidden-option').style = 'display:block';
-
+    if(screenWidth > 800){
+        document.getElementById('navegation-hidden-option').style = 'display:none';
+        document.getElementsByTagName('main')[0].style = 'visibility: visible; opacity: 1; display: block';
+        document.getElementsByTagName('footer')[0].style = 'visibility: visible; opacity: 1; display: block';
+    } else {
+        document.getElementById('navegation-hidden-option').style = 'display:block';
+        document.getElementsByTagName('nav')[0].style = 'display: none;';
+        setTimeout(() => {
+            document.getElementsByTagName('nav')[0].style = 'display: block;';
+        }, 1);
+    }
 }
 
+// &Ejecicion de la funcion resizeAutoLecture.
+resizeAutoLecture();
+
+// &Evento listener para cuando se ajuste el tamaño de pestaña se autoajusten los elementos reutilizando resizeAutoLecture.
+window.addEventListener('resize', function (){
+    resizeAutoLecture();
+});
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// !Width 899px Script.
 // ~Navegation Menu Dropdown
 function navegationMenuDropdown(){
     let navegationDropdownActivation = document.getElementById('navegation-menu-element').textContent;
