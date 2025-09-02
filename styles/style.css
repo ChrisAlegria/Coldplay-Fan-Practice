@@ -158,14 +158,26 @@ main{
     width: 23.92vw;
 }
 
+/* ^Merch Section */
+.merch-section{
+    height: 25.8vw;
+    display: flex;
+    align-items: flex-end;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.merch-section>div{
+    height: 93.5%;
+    flex: 0 0 19%;
+    margin: 1vw 0.3vw;
+    background-color: #003463;
+}
+
 /* ~Footer */
 footer{
     opacity: 1;
-}
-
-.merch-section{
-    height: 25.8vw;
-    border: 1px solid red;
 }
 
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
