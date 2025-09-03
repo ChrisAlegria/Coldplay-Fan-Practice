@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // !General width Script.
-// ~Width Dinamic Resize Functions
+// ~Width Dinamic Resize 
 // &Funcion para el ajuste automatico de elementos de manera responsiva segun el tamaño de pantalla.
 function resizeAutoLecture(){
     let screenWidth = window.innerWidth;
@@ -26,11 +26,12 @@ window.addEventListener('resize', function (){
     resizeAutoLecture();
 });
 
-// ~Carousel Change
+// ~Carousel 
+// ^Change And movement of elements
 // &Declaracion de variables del carrucel asi como de los botones para cambio de elementos.
-let carousel = document.getElementsByClassName('merch-section')[0].getElementsByTagName('div')[0];
-let carouselBackButton = document.getElementsByClassName('carousel-back-button')[0];
-let carouselNextButton = document.getElementsByClassName('carousel-next-button')[0];
+const carousel = document.getElementsByClassName('merch-section')[0].getElementsByTagName('div')[0];
+const carouselBackButton = document.getElementsByClassName('carousel-back-button')[0];
+const carouselNextButton = document.getElementsByClassName('carousel-next-button')[0];
 
 // &Evento listener que se asigna la funcion al boton de siguiente del carrucel para recorrer los elementos a la izquierda.
 carouselNextButton.addEventListener('click', function(){
@@ -49,6 +50,24 @@ carouselBackButton.addEventListener('click', function(){
         behavior: "smooth"
     });
 });
+
+// ^Hover on elements
+// &Declaracion de 
+const carouselNodeElements = document.querySelectorAll('.merch-section > div > div');
+const carouselElements = Array.from(carouselNodeElements);
+console.log(carouselElements)
+
+// &
+carouselElements.forEach(element => {
+    element.addEventListener("mouseenter", function(){
+        console.log(`Hover realizado en el elemento`,element)
+        element.style = 'height: 100%; background-color: #00315d';
+    })
+    element.addEventListener('mouseleave', function(){
+        element.style = 'height: 97.5%; background-color: #003463';
+    })
+});
+
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // !Width 899px Script.

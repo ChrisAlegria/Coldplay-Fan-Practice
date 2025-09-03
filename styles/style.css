@@ -177,10 +177,14 @@ main{
     flex: 0 0 19%;
     margin: 0 0.25vw 0 0.25vw;
     background-color: #003463;
+    transition: height 0.27s, background-color 0.27s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .merch-section>div>div>img{
-    width: 90%;
+    width: 80%;
     margin: 5%;
 }
 
