@@ -160,6 +160,9 @@ main{
 
 /* ^Merch Section */
 .merch-section{
+    position: relative;
+}
+.merch-section>div{
     height: 25.9vw;
     display: flex;
     align-items: flex-end;
@@ -169,11 +172,41 @@ main{
     margin-bottom: 20px;
 }
 
-.merch-section>div{
+.merch-section>div>div{
     height: 97.5%;
     flex: 0 0 19%;
     margin: 0 0.25vw 0 0.25vw;
     background-color: #003463;
+}
+
+.merch-section>div>div>img{
+    width: 90%;
+    margin: 5%;
+}
+
+.merch-section>div:nth-child(2), .merch-section>div:nth-child(3){
+    width: 2.4vw;
+    height: 2.4vw;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    transition: left 0.2s;
+}
+
+.merch-section>div:nth-child(2){
+    left: 0.6vw;
+}
+
+.merch-section>div:nth-child(3){
+    right: 0.6vw;
+}
+
+.merch-section>div:nth-child(2):hover{
+    left: 0.4vw;
+}
+
+.merch-section>div:nth-child(3):hover{
+    right: 0.4vw;
 }
 
 /* ~Footer */

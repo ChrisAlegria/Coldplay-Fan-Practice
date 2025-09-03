@@ -26,6 +26,30 @@ window.addEventListener('resize', function (){
     resizeAutoLecture();
 });
 
+// ~Carousel Change
+// &Declaracion de variables del carrucel asi como de los botones para cambio de elementos.
+let carousel = document.getElementsByClassName('merch-section')[0].getElementsByTagName('div')[0];
+let carouselBackButton = document.getElementsByClassName('carousel-back-button')[0];
+let carouselNextButton = document.getElementsByClassName('carousel-next-button')[0];
+
+// &Evento listener que se asigna la funcion al boton de siguiente del carrucel para recorrer los elementos a la izquierda.
+carouselNextButton.addEventListener('click', function(){
+    console.log('click de siguiente en carrucel.');
+    carousel.scrollBy({
+        left: 200,
+        behavior: "smooth"
+    });
+});
+
+// &Evento listener que se asigna la funcion al boton de regreso del carrucel para recorrer los elementos a la derecha.
+carouselBackButton.addEventListener('click', function(){
+    console.log('click de regreso en carrucel.');
+    carousel.scrollBy({
+        left: -200,
+        behavior: "smooth"
+    });
+});
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // !Width 899px Script.
 // ~Navegation Menu Dropdown
