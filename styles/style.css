@@ -151,7 +151,7 @@ main{
 .love-banner-message{
     position: absolute;
     bottom: 17.1%;
-    right: 1.89%;
+    right: 1.8%;
 }
 
 .love-banner-message svg{
@@ -160,18 +160,19 @@ main{
 
 /* ^Merch Section */
 .merch-section{
-    height: 25.8vw;
+    height: 25.9vw;
     display: flex;
     align-items: flex-end;
     overflow: scroll;
     overflow-x: hidden;
     overflow-y: hidden;
+    margin-bottom: 20px;
 }
 
 .merch-section>div{
-    height: 93.5%;
+    height: 97.5%;
     flex: 0 0 19%;
-    margin: 1vw 0.3vw;
+    margin: 0 0.25vw 0 0.25vw;
     background-color: #003463;
 }
 
