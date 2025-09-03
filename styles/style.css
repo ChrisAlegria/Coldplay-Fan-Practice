@@ -188,6 +188,19 @@ main{
     margin: 5%;
 }
 
+.merch-section>div>div>p{
+    text-align: center;
+}
+
+.merch-section>div>div>button{
+    width: auto;
+    height: 8%;
+    color: yellow;
+    background-color: transparent;
+    border: 1px dotted yellow;
+    border-radius: 100px;
+}
+
 .merch-section>div:nth-child(2), .merch-section>div:nth-child(3){
     width: 2.4vw;
     height: 2.4vw;
