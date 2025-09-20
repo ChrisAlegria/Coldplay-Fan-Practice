@@ -55,7 +55,10 @@ carouselBackButton.addEventListener('click', function(){
 // &Declaracion de 
 const carouselNodeElements = document.querySelectorAll('.merch-section > div > div');
 const carouselElements = Array.from(carouselNodeElements);
-console.log(carouselElements)
+const carouselNodeElementsButtons = document.querySelectorAll('.merch-section > div > div > button');
+const carouselElementsButtons = Array.from(carouselNodeElementsButtons);
+console.log(carouselElements);
+console.log(carouselElementsButtons)
 
 // &
 carouselElements.forEach(element => {
