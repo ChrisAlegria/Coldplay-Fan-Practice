@@ -195,10 +195,11 @@ main{
 .merch-section>div>div>button{
     width: auto;
     height: 8%;
-    color: yellow;
+    color: #fff855;
     background-color: transparent;
-    border: 1px dotted yellow;
+    border: 1px dotted #fff855;
     border-radius: 100px;
+    transition: background-color 0.4s, color 0.4s;
 }
 
 .merch-section>div:nth-child(2), .merch-section>div:nth-child(3){
@@ -207,7 +208,7 @@ main{
     position: absolute;
     top: 50%;
     cursor: pointer;
-    transition: left 0.2s;
+    transition: left 0.2s, right 0.2s;
 }
 
 .merch-section>div:nth-child(2){

@@ -55,20 +55,22 @@ carouselBackButton.addEventListener('click', function(){
 // &Declaracion de 
 const carouselNodeElements = document.querySelectorAll('.merch-section > div > div');
 const carouselElements = Array.from(carouselNodeElements);
-const carouselNodeElementsButtons = document.querySelectorAll('.merch-section > div > div > button');
-const carouselElementsButtons = Array.from(carouselNodeElementsButtons);
 console.log(carouselElements);
-console.log(carouselElementsButtons)
 
 // &
 carouselElements.forEach(element => {
+    const carouselElementButton = element.querySelector('button');
+
     element.addEventListener("mouseenter", function(){
-        console.log(`Hover realizado en el elemento`,element)
+        console.log(`Hover realizado en el elemento`,element);
         element.style = 'height: 100%; background-color: #00315d';
-    })
+        carouselElementButton.style = 'background-color: #fff855; color: #00315d;';
+    });
+
     element.addEventListener('mouseleave', function(){
         element.style = 'height: 97.5%; background-color: #003463';
-    })
+        carouselElementButton.style = 'background-color: transparent;';
+    });
 });
 
 
