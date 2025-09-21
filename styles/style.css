@@ -185,15 +185,17 @@ main{
 
 .merch-section>div>div>img{
     width: 80%;
-    margin: 5%;
+    margin: 5% 5% 0 5%;
 }
 
 .merch-section>div>div>p{
+    margin-top: auto;
     text-align: center;
 }
 
 .merch-section>div>div>button{
     width: auto;
+    margin-bottom: 2.21vw;
     padding: 0 1.8vw;
     font-weight: bold;
     height: 8%;
