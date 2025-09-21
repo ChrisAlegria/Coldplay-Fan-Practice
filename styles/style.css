@@ -194,12 +194,14 @@ main{
 
 .merch-section>div>div>button{
     width: auto;
+    padding: 0 1.8vw;
+    font-weight: bold;
     height: 8%;
     color: #fff855;
     background-color: transparent;
     border: 1px dotted #fff855;
     border-radius: 100px;
-    transition: background-color 0.4s, color 0.4s;
+    transition: background-color 0.4s, color 0.4s, width 0.4s;
 }
 
 .merch-section>div:nth-child(2), .merch-section>div:nth-child(3){
