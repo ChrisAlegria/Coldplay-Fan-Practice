@@ -46,12 +46,12 @@ carouselBackButton.addEventListener('click', function(){
 });
 
 // ^Hover on elements
-// &Declaracion de 
+// &Declaracion de variables las cuales obtienen los elementos dentro del carrucel, asi como sus botones. 
 const carouselNodeElements = document.querySelectorAll('.merch-section > div > div');
 const carouselElements = Array.from(carouselNodeElements);
 console.log(carouselElements);
 
-// &
+// &Bucle que asigna eventos listener a los botones para aplicar estilos a los elementos en los que se haga hover.
 carouselElements.forEach(element => {
     const carouselElementButton = element.querySelector('button');
 
