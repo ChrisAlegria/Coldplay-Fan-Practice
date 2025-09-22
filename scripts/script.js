@@ -35,20 +35,14 @@ const carouselNextButton = document.getElementsByClassName('carousel-next-button
 
 // &Evento listener que se asigna la funcion al boton de siguiente del carrucel para recorrer los elementos a la izquierda.
 carouselNextButton.addEventListener('click', function(){
-    console.log('click de siguiente en carrucel.');
-    carousel.scrollBy({
-        left: 200,
-        behavior: "smooth"
-    });
+    const first = carousel.firstElementChild;
+    carousel.appendChild(first);
 });
 
 // &Evento listener que se asigna la funcion al boton de regreso del carrucel para recorrer los elementos a la derecha.
 carouselBackButton.addEventListener('click', function(){
-    console.log('click de regreso en carrucel.');
-    carousel.scrollBy({
-        left: -200,
-        behavior: "smooth"
-    });
+    const last = carousel.lastElementChild;
+    carousel.prepend(last);
 });
 
 // ^Hover on elements
