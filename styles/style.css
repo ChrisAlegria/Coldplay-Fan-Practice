@@ -170,12 +170,14 @@ main{
     overflow-x: hidden;
     overflow-y: hidden;
     margin-bottom: 20px;
+    transition: transform 0.5s ease; 
 }
 
 .merch-section>div>div{
     height: 97.5%;
-    flex: 0 0 19%;
-    margin: 0 0.25vw 0 0.25vw;
+    font-size: 0.95rem;
+    flex: 0 0 19.25%;
+    margin: 0 0.24vw 0 0.23vw;
     background-color: #003463;
     transition: height 0.27s, background-color 0.27s;
     display: flex;
@@ -184,8 +186,8 @@ main{
 }
 
 .merch-section>div>div>img{
-    width: 80%;
-    margin: 5% 5% 0 5%;
+    width: 78.8%;
+    margin: 8% 5% 0 5%;
 }
 
 .merch-section>div>div>p{
@@ -195,6 +197,7 @@ main{
 
 .merch-section>div>div>button{
     width: auto;
+    font-size: 0.8rem;
     margin-bottom: 2.21vw;
     padding: 0 1.8vw;
     font-weight: bold;
@@ -203,7 +206,7 @@ main{
     background-color: transparent;
     border: 1px dotted #fff855;
     border-radius: 100px;
-    transition: background-color 0.4s, color 0.4s, width 0.4s;
+    transition: background-color 0.4s, color 0.4s, width 0.4s, transform 0.4s;
 }
 
 .merch-section>div:nth-child(2), .merch-section>div:nth-child(3){

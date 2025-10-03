@@ -36,13 +36,28 @@ const carouselNextButton = document.getElementsByClassName('carousel-next-button
 // &Evento listener que se asigna la funcion al boton de siguiente del carrucel para recorrer los elementos a la izquierda.
 carouselNextButton.addEventListener('click', function(){
     const first = carousel.firstElementChild;
-    carousel.appendChild(first);
+    carousel.style.transition = 'transform 0.5s ease';
+    carousel.style.transform = `translateX(-${first.offsetWidth}px)`;
+
+    carousel.addEventListener('transitionend', function handler() {
+        carousel.style.transition = 'none';
+        carousel.style.transform = 'translateX(0)'; 
+        carousel.appendChild(first);
+        carousel.removeEventListener('transitionend', handler);
+    });
 });
 
 // &Evento listener que se asigna la funcion al boton de regreso del carrucel para recorrer los elementos a la derecha.
 carouselBackButton.addEventListener('click', function(){
     const last = carousel.lastElementChild;
     carousel.prepend(last);
+    carousel.style.transition = 'none';
+    carousel.style.transform = `translateX(-${last.offsetWidth}px)`;
+
+    requestAnimationFrame(() => {
+        carousel.style.transition = 'transform 0.5s ease';
+        carousel.style.transform = 'translateX(0)';
+    });
 });
 
 // ^Hover on elements
@@ -58,7 +73,7 @@ carouselElements.forEach(element => {
     element.addEventListener("mouseenter", function(){
         console.log(`Hover realizado en el elemento`,element);
         element.style = 'height: 100%; background-color: #00315d';
-        carouselElementButton.style = 'background-color: #fff855; color: #00315d; padding: 0 2.8vw;';
+        carouselElementButton.style = 'background-color: #fff855; color: #00315d; transform: scalex(1.1)';
     });
 
     element.addEventListener('mouseleave', function(){
@@ -68,7 +83,7 @@ carouselElements.forEach(element => {
 });
 
 // &Recorre los elementos un poco hacia la derecha para que esten centrados.
-carousel.scrollLeft += 240;
+carousel.scrollLeft += 250;
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // !Width 899px Script.
