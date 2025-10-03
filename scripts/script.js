@@ -73,7 +73,7 @@ carouselElements.forEach(element => {
     element.addEventListener("mouseenter", function(){
         console.log(`Hover realizado en el elemento`,element);
         element.style = 'height: 100%; background-color: #00315d';
-        carouselElementButton.style = 'background-color: #fff855; color: #00315d; transform: scalex(1.1)';
+        carouselElementButton.style = 'background-color: #fff855; color: #00315d; padding: 0 2.8vw';
     });
 
     element.addEventListener('mouseleave', function(){

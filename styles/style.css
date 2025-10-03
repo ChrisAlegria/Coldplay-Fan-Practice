@@ -183,30 +183,37 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+}
+
+.merch-section>div>div:hover{
+    cursor: pointer;
 }
 
 .merch-section>div>div>img{
-    width: 78.8%;
-    margin: 8% 5% 0 5%;
+    width: 78.5%;
+    margin: 8% 0 auto 0;
 }
 
 .merch-section>div>div>p{
-    margin-top: auto;
+    width: 85%;
+    margin: 0 0 25px 0;
+    display: flex;
+    justify-content: center;
     text-align: center;
 }
 
 .merch-section>div>div>button{
     width: auto;
-    font-size: 0.8rem;
-    margin-bottom: 2.21vw;
-    padding: 0 1.8vw;
-    font-weight: bold;
+    font-size: 0.95rem;
+    margin: 0 0 1.45vw 0;
+    padding: 0 2.1vw;
     height: 8%;
     color: #fff855;
     background-color: transparent;
     border: 1px dotted #fff855;
     border-radius: 100px;
-    transition: background-color 0.4s, color 0.4s, width 0.4s, transform 0.4s;
+    transition: background-color 0.4s, color 0.4s, width 0.4s, padding 0.3s;
 }
 
 .merch-section>div:nth-child(2), .merch-section>div:nth-child(3){
