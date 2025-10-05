@@ -1,0 +1,413 @@
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* !Base Styles. */
+/* ~Body General Styles */ 
+body{
+    font-family: 'Louize', Georgia, serif;
+    color: white;
+    background-color: #003a6f;
+    margin: 0;
+}
+
+/* ~Header */
+/* ^Main Container */
+header{
+    height: 3.2vh;
+    margin: 4vh 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    color: #f8f8f8;
+}
+
+/* ^Content */
+header>div{
+    display: flex;
+}
+
+.media-branding-nav{
+    display: none;
+    z-index: 1;
+}
+
+.branding-nav{
+    margin-left: 1.65vw;
+}
+
+.branding-nav svg{
+    width: 21.3vh;
+}
+
+.branding-nav div:first-child{
+    z-index: 1;
+}
+
+nav{
+    font-size: 1.15vw;
+    margin-left: 2.2vw;
+}
+
+nav img{
+    display: none;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+nav li{
+    z-index: 1;
+    margin: 0.2vw 1.92vw 0 0;
+    align-content: center;
+    cursor: pointer;
+    transition: color 0.4s;
+    letter-spacing: -0.1px;
+    font-size: 0.91rem;
+}
+
+nav li:nth-child(1):hover, nav li:nth-child(2):hover{
+    color: #FFB755;
+}
+
+nav li:nth-child(3):hover{
+    color: #A3FF55;
+}
+
+nav li:nth-child(4):hover{
+    color: #55FFD1;
+}
+
+nav li:nth-child(5):hover{
+    color: #55D8FF;
+}
+
+nav li:nth-child(6):hover{
+    color: #9655FF;
+}
+
+.header-moons{
+    margin-right: 1.41vw;
+    height: 100%;
+}
+
+#moons-logo{
+    margin-left: 0.1vw;
+}
+
+/* ~Main */
+/* ^Main Container */
+main{
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.6s, visibility 0.6s;
+}
+
+/* ^Initial Banner */
+.rainbow-background{
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.rainbow-background img{
+    width: 49.5vw;
+}
+
+.initial-banner{
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    position: relative;
+}
+
+.initial-banner div:nth-child(1){
+    display: flex;
+    justify-content: center;
+    padding: 0 1%;
+}
+
+.initial-banner div:nth-child(1) img{
+    width: 43.8vw;
+    margin-top: 6.8vh;
+}
+
+.initial-banner div:nth-child(2){
+    font-size: 1.53vw;
+    letter-spacing: -0.05rem;
+    margin-top: 1.3vw;
+    padding: 0;
+}
+
+.initial-banner div:nth-child(3) img{
+    height: 1.85vw;
+    margin-top: 14.5%;
+}
+
+.love-banner-message{
+    position: absolute;
+    bottom: 17.1%;
+    right: 1.8%;
+}
+
+.love-banner-message svg{
+    width: 23.92vw;
+}
+
+/* ^Merch Section */
+.merch-section{
+    position: relative;
+}
+.merch-section>div{
+    height: 25.9vw;
+    display: flex;
+    align-items: flex-end;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin-bottom: 20px;
+    transition: transform 0.5s ease; 
+}
+
+.merch-section>div>div{
+    height: 97.5%;
+    font-size: 0.95rem;
+    flex: 0 0 19.25%;
+    margin: 0 0.24vw 0 0.23vw;
+    background-color: #003463;
+    transition: height 0.27s, background-color 0.27s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.merch-section>div>div:hover{
+    cursor: pointer;
+}
+
+.merch-section>div>div>img{
+    width: 78.5%;
+    margin: 8% 0 auto 0;
+}
+
+.merch-section>div>div>p{
+    width: 85%;
+    margin: 0 0 25px 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.merch-section>div>div>button{
+    width: auto;
+    font-size: 0.95rem;
+    margin: 0 0 1.45vw 0;
+    padding: 0 2.1vw;
+    height: 8%;
+    color: #fff855;
+    background-color: transparent;
+    border: 1px dotted #fff855;
+    border-radius: 100px;
+    transition: background-color 0.4s, color 0.4s, width 0.4s, padding 0.3s;
+}
+
+.merch-section>div:nth-child(2), .merch-section>div:nth-child(3){
+    width: 2.4vw;
+    height: 2.4vw;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    transition: left 0.2s, right 0.2s;
+}
+
+.merch-section>div:nth-child(2){
+    left: 0.6vw;
+}
+
+.merch-section>div:nth-child(3){
+    right: 0.6vw;
+}
+
+.merch-section>div:nth-child(2):hover{
+    left: 0.4vw;
+}
+
+.merch-section>div:nth-child(3):hover{
+    right: 0.4vw;
+}
+
+/* ~Footer */
+footer{
+    opacity: 1;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ! width 899px Styles. */
+@media (max-width: 899px){    
+    /* ~Header */
+    /* ^Main Container */
+    header{
+        height: auto;
+        margin-top: 2.1vh;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(3, 32.6vw);
+        grid-row: auto auto;
+        justify-content: center;
+        align-items: flex-start;
+        justify-items: center;
+        font-size: 0.91rem;
+        font-weight: 400;
+    }
+    
+    /* ^Content */
+    header a{
+        color: #f8f8f8;
+        text-decoration: none;
+    }
+    
+    header div{
+        margin: 0;
+        padding: 0;
+    }
+    
+    header .media-branding-nav:first-child{
+        width: 100%;
+        justify-self: flex-start;
+        margin-left: 17px;
+    }
+    
+    header div:nth-child(3){
+        justify-self: flex-end;
+        margin-right: 17px;
+    }
+
+    .branding-nav{
+        display: block;
+    }
+    
+    .media-branding-nav{
+        display: block;
+        cursor: pointer;
+    }   
+    
+    .media-branding-nav li{
+        list-style: none;
+    }
+    
+    .header-moons{
+        grid-column: 2;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .header-moons img{
+        width: 115px;
+        height: 17px;
+        z-index: 1;
+        margin-top: 1vw;
+    }
+
+    .branding-nav{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .branding-nav svg{
+        width: 18.8vh;
+    }
+    
+    /* ^Navegation Menu Dropdawn */
+    nav{
+        background-color: #003a6f;
+        width: 100%;
+        height: 87vh;
+        color: white;
+        margin: 0;
+        top: 13%;
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.6s, visibility 0.8s;
+    }
+
+    nav ul{
+        width: 100%;
+        margin-top: 7.45vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav li{
+        width: 100%;
+        height: 7.38vh;
+        margin: 0;
+        font-size: 2.48rem;
+        letter-spacing: 0.1px;
+        z-index: 1;
+    }
+
+    #hearts-logo{
+        z-index: 2;
+        display: block;
+        height: 31.1vh;
+        position: absolute;
+        top: 27.5vh;
+        left: 8vw;
+    }
+
+    #dropdawn-rainbow{
+        z-index: 0;
+        display: block;
+        width: 175vw;
+        position: fixed;
+        top: -100%;
+        left: 0;
+    }
+
+    /* ~Main */
+    /* ^Initial Banner */
+    .rainbow-background{
+        right: 29.5vw;
+    }
+
+    .rainbow-background img{
+        width: 98vw;
+    }
+
+    .initial-banner div:nth-child(1) img{
+        width: 72.5vw;
+        margin-top: 4.3vh;
+    }
+
+    .initial-banner div:nth-child(2){
+        font-size: 2.5vw;
+        font-weight: 0;
+        letter-spacing: -0.03rem;
+        margin-top: 3vh;
+    }
+
+    .initial-banner div:nth-child(3) img{
+        height: 3.04vw;
+        width: 18.04vw;
+        margin-top: 14.5%;
+    }
+
+    .love-banner-message{
+        display: none;
+    }
+
+    /* ^Merch Section */
+}   

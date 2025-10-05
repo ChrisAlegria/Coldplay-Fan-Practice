@@ -1,0 +1,13 @@
+.carrucel{
+    height: 50vh;
+    background-color: yellowgreen;
+    display: flex;
+    overflow: scroll;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.carrucel div{
+    margin: 10px;
+    background-color: red;
+}
