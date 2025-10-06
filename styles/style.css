@@ -30,7 +30,7 @@ header>div{
 }
 
 .branding-nav{
-    margin-left: 1.65vw;
+    margin-left: 22px;
 }
 
 .branding-nav svg{
@@ -43,7 +43,7 @@ header>div{
 
 nav{
     font-size: 1.15vw;
-    margin-left: 2.2vw;
+    margin-left: 29px;
 }
 
 nav img{
@@ -59,7 +59,7 @@ nav ul{
 
 nav li{
     z-index: 1;
-    margin: 0.2vw 1.92vw 0 0;
+    margin: 0.2vw 25.5px 0 0;
     align-content: center;
     cursor: pointer;
     transition: color 0.4s;
