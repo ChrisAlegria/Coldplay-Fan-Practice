@@ -117,7 +117,7 @@ main{
 }
 
 .initial-banner{
-    height: 45vh;
+    height: 278px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -132,14 +132,15 @@ main{
 }
 
 .initial-banner div:nth-child(1) img{
-    width: 43.8vw;
+    max-width: 98.18%;
+    margin: 0 2.5% 0 2.5%;
     margin-top: 6.8vh;
 }
 
 .initial-banner div:nth-child(2){
-    font-size: 1.53vw;
+    font-size: 20.4px;
     letter-spacing: -0.05rem;
-    margin-top: 1.3vw;
+    margin-top: 1.25vw;
     padding: 0;
 }
 
@@ -389,17 +390,17 @@ footer{
         width: 98vw;
     }
 
-    .initial-banner div:nth-child(1) img{
+    /* .initial-banner div:nth-child(1) img{
         width: 72.5vw;
         margin-top: 4.3vh;
-    }
+    } */
 
-    .initial-banner div:nth-child(2){
+    /* .initial-banner div:nth-child(2){
         font-size: 2.5vw;
         font-weight: 0;
         letter-spacing: -0.03rem;
         margin-top: 3vh;
-    }
+    } */
 
     .initial-banner div:nth-child(3) img{
         height: 3.04vw;
@@ -412,4 +413,7 @@ footer{
     }
 
     /* ^Merch Section */
+    .merch-section{
+        margin-top: 50px;
+    }
 }   
